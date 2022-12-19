@@ -1,0 +1,9 @@
+mixin tableRow(employee)
+  tr
+    td 
+      img.ui.mini.rounded.image(src=employee.picture.thumbnail)
+    td #{employee.name.first}
+    td #{employee.name.last}
+    td #{employee.email}
+    td #{employee.phone}
+    td #{employee.location.city}

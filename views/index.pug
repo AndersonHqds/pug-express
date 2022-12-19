@@ -1,0 +1,20 @@
+extends layout.pug
+include mixins/_tableRow
+
+block content
+  table.ui.celled.table.center.aligned
+    thead
+      tr
+        th Avatar
+        th First Name 
+        th Last Name
+        th Email 
+        th Phone 
+        th City
+    tbody 
+      each employee in employees
+        +tableRow(employee)
+    tfoot
+      tr 
+        th(colspan='6')
+block footer
